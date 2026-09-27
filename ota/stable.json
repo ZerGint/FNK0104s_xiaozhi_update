@@ -4,8 +4,8 @@
   "firmware": {
     "version": "1.1.2",
     "url": "https://raw.githubusercontent.com/ZerGint/FNK0104s_xiaozhi_update/main/firmware/stable/1.1.2/fnk0104s-firmware.bin",
-    "size": 3833696,
-    "sha256": "98eeafe07433be6edd737dfbb8fe93a140ae035194bfa38b0ad769519c00266b",
+    "size": 3833664,
+    "sha256": "bd1060bf8cea8bdd0f3af4d23197a039d7bfe0869de71cd669dccdde56d1d3ea",
     "board": "freenove-fnk0104s",
     "chip": "esp32s3"
   }
