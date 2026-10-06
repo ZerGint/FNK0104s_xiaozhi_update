@@ -8,6 +8,6 @@
                      "chip":  "esp32s3",
                      "size":  4006720,
                      "sha256":  "d315738a1e1c171df6b1651aaffadbd3196f753ef1801f4ddd0795037d1ba775",
-                     "url":  "https://github.com/ZerGint/FNK0104s_xiaozhi_update/releases/download/v1.1.5/fnk0104s-firmware.bin"
+                     "url":  "https://raw.githubusercontent.com/ZerGint/FNK0104s_xiaozhi_update/main/firmware/stable/1.1.5/fnk0104s-firmware.bin"
                  }
 }
