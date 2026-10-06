@@ -1,0 +1,12 @@
+{
+  "version": "1.1.5",
+  "channel": "stable",
+  "branch": "FINAL",
+  "git_sha": "84e53e961f59c00558266e3a74254a13af872a76",
+  "size": 4006720,
+  "sha256": "d315738a1e1c171df6b1651aaffadbd3196f753ef1801f4ddd0795037d1ba775",
+  "chip": "esp32s3",
+  "board": "freenove-fnk0104s",
+  "build_time": "Oct  6 2026T16:37:25",
+  "idf_version": "6.1.0"
+}
