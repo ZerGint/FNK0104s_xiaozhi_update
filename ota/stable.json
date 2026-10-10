@@ -1,13 +1,13 @@
 {
-    "schema":  1,
-    "channel":  "stable",
-    "firmware":  {
-                     "version":  "1.1.11",
-                     "build":  "d74b53b1c18e3dca5563d9abc05872864fd55a3b",
-                     "board":  "freenove-fnk0104s",
-                     "chip":  "esp32s3",
-                     "size":  4018848,
-                     "sha256":  "26cfcdc48bd9267fac6a2af3a5d49692e5e55c71330acb8c5e67e04a53a4d2c1",
-                     "url":  "https://raw.githubusercontent.com/ZerGint/FNK0104s_xiaozhi_update/main/firmware/stable/1.1.11/fnk0104s-firmware.bin"
-                 }
+  "schema": 1,
+  "channel": "stable",
+  "firmware": {
+    "version": "1.1.12",
+    "build": "2dbf8ac2b26c77d20158c499e1d64c382cf23bae",
+    "board": "freenove-fnk0104s",
+    "chip": "esp32s3",
+    "size": 4002224,
+    "sha256": "2a230ae32b9b04222ba87dc9c06f8c81537048a8873117a2fb5b8f22d51ba78b",
+    "url": "https://raw.githubusercontent.com/ZerGint/FNK0104s_xiaozhi_update/main/firmware/stable/1.1.12/fnk0104s-firmware.bin"
+  }
 }
