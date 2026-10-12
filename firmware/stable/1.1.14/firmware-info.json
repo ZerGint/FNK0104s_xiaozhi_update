@@ -2,7 +2,7 @@
   "version": "1.1.14",
   "channel": "stable",
   "branch": "FINAL",
-  "git_sha": "06c0867",
+  "git_sha": "06c086747aae8171d8c6b6c3632f55f661c07b86",
   "size": 4033984,
   "sha256": "0eec65014830ec89eba00ce806bd47aaeb4a3bdb07aafe31500231b742059a68",
   "chip": "esp32s3",
