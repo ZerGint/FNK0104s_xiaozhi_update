@@ -5,6 +5,10 @@ This directory contains the files needed for a fresh FNK0104S setup.
 - `FNKMusicBridge-1.1.6.zip` — latest packaged FNKMusicBridge archive available in the workspace.
 - `factory_bin/fnk0104s-factory-1.1.14-merged.bin` — complete 16 MB factory image containing the bootloader, partition table, OTA data, application, and assets.
 
+The bridge archive is stored with Git LFS. A direct download is available at:
+
+`https://media.githubusercontent.com/media/ZerGint/FNK0104s_xiaozhi_update/main/factory_setup/FNKMusicBridge-1.1.6.zip`
+
 The merged image is written at flash offset `0x0`:
 
 ```text
