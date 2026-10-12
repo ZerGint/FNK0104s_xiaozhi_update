@@ -1,8 +1,8 @@
-﻿# Factory images
+# Factory images
 
 - File: `fnk0104s-factory-1.1.15-merged.bin`
 - Size: 11232544 bytes
-- SHA-256: `236ad595b7f13ffe1f6f552c3aea73e0c18c646cc1dc52f909bb84fbbbe2c6d5`
+- SHA-256: `aef6c8d8956e4dd62d30e70fdea196969de9cbc8fdb9fc1a485e0e20e965247a`
 - Target: ESP32-S3, 16 MB flash
 - Flash offset: `0x0`
 
