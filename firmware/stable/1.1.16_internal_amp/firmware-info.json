@@ -1,0 +1,11 @@
+{
+  "variant": "internal_amp",
+  "release_id": "1.1.16_internal_amp",
+  "version": "1.1.16",
+  "build": "7172ef75c7d8edabd0a2618c6535de3ca7bd171d",
+  "board": "freenove-fnk0104s",
+  "chip": "esp32s3",
+  "size": 4033808,
+  "sha256": "a152023092e03056f12165c8f8a6fea8d702fa243e8b37ca9c5f4193f5ddb250",
+  "url": "https://raw.githubusercontent.com/ZerGint/FNK0104s_xiaozhi_update/main/firmware/stable/1.1.16_internal_amp/fnk0104s-firmware.bin"
+}

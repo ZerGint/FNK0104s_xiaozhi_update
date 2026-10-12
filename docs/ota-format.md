@@ -1,83 +1,41 @@
-# OTA manifest format
+# Формат OTA-манифеста FNK0104S
 
-The FNK0104S custom firmware reads a small channel manifest from this repository and downloads the referenced firmware from a GitHub Release asset.
+Устройство читает `ota/stable.json` и выбирает запись по встроенному варианту аудиовыхода. Поддерживаются `external_amp` и `internal_amp`.
 
-## Channel manifests
-
-Stable channel:
-
-`ota/stable.json`
-
-Beta channel:
-
-`ota/beta.json`
-
-An empty channel uses:
+## Схема 2
 
 ```json
 {
-  "schema": 1,
+  "schema": 2,
   "channel": "stable",
-  "firmware": null
-}
-```
-
-A populated channel should use this shape:
-
-```json
-{
-  "schema": 1,
-  "channel": "stable",
-  "firmware": {
-    "version": "2.5.0",
-    "build": "git-sha-or-build-id",
-    "board": "freenove-fnk0104s",
-    "chip": "esp32s3",
-    "size": 3809296,
-    "sha256": "64-lowercase-hex-characters",
-    "url": "https://github.com/ZerGint/FNK0104s_xiaozhi_update/releases/download/v2.5.0/fnk0104s-firmware.bin"
+  "board": "freenove-fnk0104s",
+  "chip": "esp32s3",
+  "variants": {
+    "external_amp": {
+      "variant": "external_amp",
+      "release_id": "1.1.16_external_amp",
+      "version": "1.1.16",
+      "build": "git-sha-or-build-id",
+      "board": "freenove-fnk0104s",
+      "chip": "esp32s3",
+      "size": 4036816,
+      "sha256": "64-lowercase-hex-characters",
+      "url": "https://raw.githubusercontent.com/.../fnk0104s-firmware.bin"
+    },
+    "internal_amp": { }
   }
 }
 ```
 
-## Required firmware fields
+Каждая запись в `variants` обязана содержать `variant`, `release_id`, числовую версию `version`, `build`, `board`, `chip`, точный `size`, SHA-256 и HTTPS `url`. Поле `variant` должно совпадать с ключом и с вариантом, скомпилированным в устройство. Несовместимый образ не скачивается и не устанавливается.
 
-- `version` — semantic firmware version shown to the device/user.
-- `build` — source commit or build identifier.
-- `board` — must be `freenove-fnk0104s`.
-- `chip` — must be `esp32s3`.
-- `size` — exact firmware binary size in bytes.
-- `sha256` — SHA-256 of the exact release asset, encoded as 64 lowercase hexadecimal characters.
-- `url` — immutable URL to the firmware asset for that release/tag.
+## Текущий layout
 
-## Release convention
+- `ota/stable.json` — единый манифест схемы 2.
+- `firmware/stable/1.1.16_external_amp/fnk0104s-firmware.bin` — OTA для внешнего усилителя.
+- `firmware/stable/1.1.16_internal_amp/fnk0104s-firmware.bin` — OTA для внутреннего усилителя.
+- `factory_setup/factory_bin/` — полные образы для заводской прошивки, включая варианты 1.1.15.
 
-Recommended tag:
+## Проверка безопасности
 
-`v<version>`
-
-Recommended binary asset name:
-
-`fnk0104s-firmware.bin`
-
-Example:
-
-`v2.5.0 / fnk0104s-firmware.bin`
-
-Do not commit firmware binaries to the repository history. Store binaries as GitHub Release assets and keep only small manifests in Git.
-
-## Update safety model
-
-The intended firmware behavior is:
-
-1. Download a candidate image to SD as a temporary file.
-2. Verify transport completion and exact file size.
-3. Calculate SHA-256 and compare it with the manifest.
-4. Verify ESP image/chip/project metadata where supported.
-5. Atomically promote the temporary file to a staged image.
-6. Ask for local installation approval.
-7. Reboot into a minimal installer.
-8. Recompute SHA-256 before writing the inactive OTA partition.
-9. Use ESP-IDF OTA validation and rollback for the first boot of the new app.
-
-The channel manifest is metadata, not a substitute for ESP-IDF image validation or rollback.
+Прошивка скачивает файл во временный путь на SD, проверяет размер и SHA-256, проверяет метаданные образа, атомарно переводит файл в staging, а минимальный установщик повторяет проверку перед записью неактивного OTA-раздела. После первого запуска ESP-IDF подтверждает или откатывает образ.

@@ -1,0 +1,11 @@
+{
+  "variant": "external_amp",
+  "release_id": "1.1.16_external_amp",
+  "version": "1.1.16",
+  "build": "7172ef75c7d8edabd0a2618c6535de3ca7bd171d",
+  "board": "freenove-fnk0104s",
+  "chip": "esp32s3",
+  "size": 4036816,
+  "sha256": "182a0e17ea9d9cb26aafb956ce037d1e05f8dbd148f7729041bc44a7904434a6",
+  "url": "https://raw.githubusercontent.com/ZerGint/FNK0104s_xiaozhi_update/main/firmware/stable/1.1.16_external_amp/fnk0104s-firmware.bin"
+}

@@ -1,26 +1,10 @@
-# FNK0104S XiaoZhi Update Repository
+# FNK0104S XiaoZhi OTA
 
-This repository hosts OTA update metadata for the custom FNK0104S XiaoZhi firmware.
+Репозиторий содержит OTA-обновления FNK0104S с раздельными каналами для усилителей. Устройство автоматически выбирает запись `external_amp` или `internal_amp` из `ota/stable.json` по скомпилированному варианту аудиовыхода.
 
-## Layout
+- Манифест: `ota/stable.json` (схема 2).
+- OTA external amp: `firmware/stable/1.1.16_external_amp/`.
+- OTA internal amp: `firmware/stable/1.1.16_internal_amp/`.
+- Полные заводские образы: `factory_setup/factory_bin/`.
 
-- `ota/stable.json` — stable-channel manifest used by the device.
-- `ota/beta.json` — optional beta-channel manifest.
-- `docs/ota-format.md` — manifest schema and release conventions.
-
-Firmware binaries should be attached to GitHub Releases rather than committed to this repository.
-
-Recommended release asset name:
-
-`fnk0104s-firmware.bin`
-
-Intended device flow:
-
-1. Fetch a channel manifest.
-2. Compare the offered version with the installed firmware.
-3. Download the firmware asset to SD staging.
-4. Verify size, SHA-256, chip/project metadata.
-5. Ask the user for installation approval.
-6. Reboot into a minimal installer mode.
-7. Re-verify and write to the inactive OTA partition.
-8. Reboot into the new firmware and validate/rollback as needed.
+Подробности формата и жизненного цикла обновления: [`docs/ota-format.md`](docs/ota-format.md).
