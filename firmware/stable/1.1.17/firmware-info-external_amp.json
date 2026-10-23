@@ -2,14 +2,14 @@
   "version": "1.1.17",
   "channel": "stable",
   "branch": "FINAL",
-  "git_sha": "5647c1c470bd4d82a58b0583cd60d87f1706a99a",
+  "git_sha": "270b3340f5ea6848c1a2d09b9290fea040886bb3",
   "dirty_worktree": true,
   "variant": "external_amp",
   "amplifier": "external amplifier",
-  "size": 4077984,
-  "sha256": "53abc1144278e6b3aede3934834ce35fbec80d3c396b928053e3cd130df0c275",
+  "size": 4078112,
+  "sha256": "95c8db9000c25cfb57b07c6da16f4de7bda49630ce3cc4d88950af6b38ec364d",
   "chip": "esp32s3",
   "board": "freenove-fnk0104s",
-  "build_time": "2026-10-23T18:52:09Z",
+  "build_time": "2026-10-23T19:04:22Z",
   "idf_version": "v6.1.0"
 }
