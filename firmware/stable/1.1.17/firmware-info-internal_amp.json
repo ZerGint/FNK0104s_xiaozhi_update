@@ -6,10 +6,10 @@
   "dirty_worktree": true,
   "variant": "internal_amp",
   "amplifier": "internal amplifier",
-  "size": 4059488,
-  "sha256": "5691897f15a120b6c1adf0f875ea96416b61154b70817f69250835530c89c491",
+  "size": 4066992,
+  "sha256": "7a1b063b4ef44ed7c65b4fb15cf52ef209798793984c402cbb4eed9ce86f5757",
   "chip": "esp32s3",
   "board": "freenove-fnk0104s",
-  "build_time": "2026-10-23T15:30:38Z",
+  "build_time": "2026-10-23T16:12:28Z",
   "idf_version": "v6.1.0"
 }
