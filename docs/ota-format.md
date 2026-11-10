@@ -60,8 +60,8 @@
 ## Текущий layout
 
 - `ota/stable.json` — единый манифест стабильного канала, схема 2.
-- `firmware/stable/1.1.17/fnk0104s-firmware-external-i2s.bin` — OTA для внешнего усилителя.
-- `firmware/stable/1.1.17/fnk0104s-firmware-internal.bin` — OTA для внутреннего усилителя.
+- `firmware/stable/1.1.20/fnk0104s-firmware-external-i2s.bin` — OTA для внешнего усилителя.
+- `firmware/stable/1.1.20/fnk0104s-firmware-internal.bin` — OTA для внутреннего усилителя.
 - `factory_setup/factory_bin/` — полные образы для заводской прошивки.
 
 Для новых выпусков предпочтительны GitHub Release assets. Если бинарники хранятся в `firmware/`, URL, размер и SHA-256 в манифесте должны в точности соответствовать файлам.
