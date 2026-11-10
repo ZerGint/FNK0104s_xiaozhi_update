@@ -1,0 +1,15 @@
+{
+  "version": "1.1.23",
+  "channel": "stable",
+  "branch": "FINAL",
+  "git_sha": "d90805cd5df029cc7b01e695d6e778e439629e57",
+  "dirty_worktree": false,
+  "variant": "external_amp",
+  "amplifier": "external amplifier",
+  "size": 4102176,
+  "sha256": "3bd55defd4db81628753d7fec6e860041769c930b5969e7c7c56f50547b01288",
+  "chip": "esp32s3",
+  "board": "freenove-fnk0104s",
+  "build_time": "2026-11-10T20:52:18Z",
+  "idf_version": "v6.1.0"
+}
