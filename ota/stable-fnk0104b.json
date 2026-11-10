@@ -1,0 +1,19 @@
+{
+  "schema": 2,
+  "channel": "stable",
+  "board": "freenove-fnk0104b",
+  "chip": "esp32s3",
+  "variants": {
+    "internal_amp": {
+      "variant": "internal_amp",
+      "release_id": "1.1.25-internal_amp-0c966ab6",
+      "version": "1.1.25",
+      "build": "f6bc6eae5870ea8c1f91df979a5379e766cc699a-internal_amp",
+      "board": "freenove-fnk0104b",
+      "chip": "esp32s3",
+      "size": 3939744,
+      "sha256": "0c966ab675dd946fd5be1db6d58cf7b8b0f80041c20c2a59a42d4f2b15850b80",
+      "url": "https://raw.githubusercontent.com/ZerGint/FNK0104s_xiaozhi_update/main/firmware/fnk0104b/stable/1.1.25/fnk0104b-firmware.bin"
+    }
+  }
+}

@@ -1,4 +1,4 @@
-# Формат OTA-манифеста FNK0104S
+# Формат OTA-манифестов FNK0104S и FNK0104B
 
 Устройство читает `ota/stable.json` и выбирает запись по встроенному варианту аудиовыхода. Поддерживаются `external_amp` и `internal_amp`. Все URL прошивок должны быть HTTPS.
 
@@ -57,11 +57,21 @@
 
 Для заполненного legacy-манифеста сохраняются поля `version`, `build`, `board`, `chip`, `size`, `sha256` и `url`.
 
+## Манифест FNK0104B
+
+FNK0104B читает отдельный файл `ota/stable-fnk0104b.json` той же схемы 2. В нём одна запись
+`internal_amp` (у B нет внешнего усилителя) с `"board": "freenove-fnk0104b"`. Устройство B
+принимает образ только при совпадении `board` и `variant` в манифесте, в запросе на установку и в
+метаданных загруженного образа. Образ S не может быть установлен на B и наоборот.
+`ota/stable.json` остаётся манифестом FNK0104S, чтобы не затронуть уже выпущенные устройства.
+
 ## Текущий layout
 
-- `ota/stable.json` — единый манифест стабильного канала, схема 2.
-- `firmware/stable/1.1.24/fnk0104s-firmware-external-i2s.bin` — OTA для внешнего усилителя.
-- `firmware/stable/1.1.24/fnk0104s-firmware-internal.bin` — OTA для внутреннего усилителя.
+- `ota/stable.json` — манифест стабильного канала FNK0104S, схема 2.
+- `ota/stable-fnk0104b.json` — манифест стабильного канала FNK0104B, схема 2.
+- `firmware/fnk0104b/stable/1.1.25/fnk0104b-firmware.bin` — OTA для FNK0104B.
+- `firmware/stable/1.1.25/fnk0104s-firmware-external-i2s.bin` — OTA для внешнего усилителя.
+- `firmware/stable/1.1.25/fnk0104s-firmware-internal.bin` — OTA для внутреннего усилителя.
 - `factory_setup/factory_bin/` — полные образы для заводской прошивки.
 
 Для новых выпусков предпочтительны GitHub Release assets. Если бинарники хранятся в `firmware/`, URL, размер и SHA-256 в манифесте должны в точности соответствовать файлам.
