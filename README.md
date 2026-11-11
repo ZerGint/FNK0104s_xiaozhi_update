@@ -6,6 +6,8 @@
 - OTA release 1.1.26: `firmware/stable/1.1.26/` (external and internal amplifier images).
 - FNK0104B: манифест `ota/stable-fnk0104b.json` (схема 2, только `internal_amp`), образы в
   `firmware/fnk0104b/stable/`. FNK0104S по-прежнему читает `ota/stable.json`.
+- Waveshare ESP32-P4 4.3": манифест `ota/stable-p4-4.3.json` (схема 2, ключ варианта — язык
+  сборки, сейчас `RU`), образы в `firmware/p4-4.3/stable/<версия>/<язык>/`.
 - Полные заводские образы: `factory_setup/factory_bin/`.
 
 Подробности формата и жизненного цикла обновления: [`docs/ota-format.md`](docs/ota-format.md).
