@@ -6,13 +6,13 @@
   "variants": {
     "RU": {
       "language": "RU",
-      "release_id": "1.0.3-RU-ea6a6348",
+      "release_id": "1.0.3-RU-816ce024",
       "version": "1.0.3",
-      "build": "0c63f7c508b61ea506392d2c04302104cb8490e6-RU",
+      "build": "7debd9f1753f521751f551320ddad2833e497bfb-RU",
       "board": "waveshare-p4-4.3",
       "chip": "esp32p4",
-      "size": 5426208,
-      "sha256": "ea6a6348011b70aaa9421b58b40853475871ed7333f7314f0979b2f4e8fbf90c",
+      "size": 5424992,
+      "sha256": "816ce0247575efab52371e95d39b862fabeb48beb19572c20e6e22561cf35c9a",
       "url": "https://raw.githubusercontent.com/ZerGint/FNK0104s_xiaozhi_update/main/firmware/p4-4.3/stable/1.0.3/RU/p4-4.3-firmware.bin"
     }
   }
