@@ -79,9 +79,9 @@ XiaoZhi (OTA0/OTA1); игровые разделы P4 не затрагиваю�
 
 - `ota/stable.json` — манифест стабильного канала FNK0104S, схема 2.
 - `ota/stable-fnk0104b.json` — манифест стабильного канала FNK0104B, схема 2.
-- `firmware/fnk0104b/stable/1.1.26/fnk0104b-firmware.bin` — OTA для FNK0104B.
-- `firmware/stable/1.1.26/fnk0104s-firmware-external-i2s.bin` — OTA для внешнего усилителя.
-- `firmware/stable/1.1.26/fnk0104s-firmware-internal.bin` — OTA для внутреннего усилителя.
+- `firmware/fnk0104b/stable/1.1.27/fnk0104b-firmware.bin` — OTA для FNK0104B.
+- `firmware/stable/1.1.27/fnk0104s-firmware-external-i2s.bin` — OTA для внешнего усилителя.
+- `firmware/stable/1.1.27/fnk0104s-firmware-internal.bin` — OTA для внутреннего усилителя.
 - `factory_setup/factory_bin/` — полные образы для заводской прошивки.
 
 Для новых выпусков предпочтительны GitHub Release assets. Если бинарники хранятся в `firmware/`, URL, размер и SHA-256 в манифесте должны в точности соответствовать файлам.

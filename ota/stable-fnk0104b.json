@@ -6,14 +6,14 @@
   "variants": {
     "internal_amp": {
       "variant": "internal_amp",
-      "release_id": "1.1.26-internal_amp-011dec82",
-      "version": "1.1.26",
-      "build": "58a774992760001afd2a524c0f927640a02103ff-internal_amp",
+      "release_id": "1.1.27-internal_amp-78e51d36",
+      "version": "1.1.27",
+      "build": "7e5f5464e932337c8adb6efbcd3962addaa04ae4-internal_amp",
       "board": "freenove-fnk0104b",
       "chip": "esp32s3",
-      "size": 3945920,
-      "sha256": "011dec82da57fd91e75e225ae23e91fa7f1752d831e29112b2948c9031907aee",
-      "url": "https://raw.githubusercontent.com/ZerGint/FNK0104s_xiaozhi_update/main/firmware/fnk0104b/stable/1.1.26/fnk0104b-firmware.bin"
+      "size": 3946896,
+      "sha256": "78e51d3682acafe83ed20506e6113994f43158ad4db50e9ab224b80c88aaf4ea",
+      "url": "https://raw.githubusercontent.com/ZerGint/FNK0104s_xiaozhi_update/main/firmware/fnk0104b/stable/1.1.27/fnk0104b-firmware.bin"
     }
   }
 }
