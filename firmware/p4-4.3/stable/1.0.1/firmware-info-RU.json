@@ -1,0 +1,15 @@
+{
+  "version": "1.0.1",
+  "channel": "stable",
+  "branch": "fix/media-voice-handoff",
+  "git_sha": "c110f9c96c6bb5c1f28f8da01b0b3a34766f5735",
+  "dirty_worktree": true,
+  "language": "RU",
+  "size": 5423488,
+  "sha256": "5133e312e3a22c046f7343b94ff7b045b7c1b5d262cf7ce0011cd9af77690543",
+  "chip": "esp32p4",
+  "board": "waveshare-p4-4.3",
+  "build_variant": "esp32-p4x-wifi6-touch-lcd-4.3",
+  "build_time": "2026-11-11T13:07:40Z",
+  "idf_version": "v6.0.2"
+}
