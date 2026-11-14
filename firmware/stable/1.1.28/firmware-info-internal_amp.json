@@ -1,0 +1,15 @@
+{
+  "version": "1.1.28",
+  "channel": "stable",
+  "branch": "FINAL",
+  "git_sha": "e5a9dc2a254561bd7618e2c6629425f883f272cf",
+  "dirty_worktree": true,
+  "variant": "internal_amp",
+  "amplifier": "internal amplifier",
+  "size": 4119040,
+  "sha256": "14bd91c49267bd361b8bb94ebc680f01cc37139421b8b764e3a118d718346bb8",
+  "chip": "esp32s3",
+  "board": "freenove-fnk0104s",
+  "build_time": "2026-11-14T20:04:31Z",
+  "idf_version": "v6.1.0"
+}
