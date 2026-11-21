@@ -6,25 +6,25 @@
   "variants": {
     "external_amp": {
       "variant": "external_amp",
-      "release_id": "1.1.28-external_amp-08815d23",
-      "version": "1.1.28",
-      "build": "e5a9dc2a254561bd7618e2c6629425f883f272cf-external_amp",
+      "release_id": "1.2.0-external_amp-408ab600",
+      "version": "1.2.0",
+      "build": "ca957952d0abec4a032bd172ba2159a151dfbb93-external_amp",
       "board": "freenove-fnk0104s",
       "chip": "esp32s3",
-      "size": 4122080,
-      "sha256": "08815d237ee058a977f20d48e4513a67deff657568b8b5e44ef38a7580a6612f",
-      "url": "https://raw.githubusercontent.com/ZerGint/FNK0104s_xiaozhi_update/main/firmware/stable/1.1.28/fnk0104s-firmware-external-i2s.bin"
+      "size": 4256240,
+      "sha256": "408ab6002a937e0858494f2e0ce552c574ac7c644e3509592fd371f1b1fdb828",
+      "url": "https://raw.githubusercontent.com/ZerGint/FNK0104s_xiaozhi_update/main/firmware/stable/1.2.0/fnk0104s-firmware-external-i2s.bin"
     },
     "internal_amp": {
       "variant": "internal_amp",
-      "release_id": "1.1.28-internal_amp-14bd91c4",
-      "version": "1.1.28",
-      "build": "e5a9dc2a254561bd7618e2c6629425f883f272cf-dirty-internal_amp",
+      "release_id": "1.2.0-internal_amp-8dce90ca",
+      "version": "1.2.0",
+      "build": "ca957952d0abec4a032bd172ba2159a151dfbb93-dirty-internal_amp",
       "board": "freenove-fnk0104s",
       "chip": "esp32s3",
-      "size": 4119040,
-      "sha256": "14bd91c49267bd361b8bb94ebc680f01cc37139421b8b764e3a118d718346bb8",
-      "url": "https://raw.githubusercontent.com/ZerGint/FNK0104s_xiaozhi_update/main/firmware/stable/1.1.28/fnk0104s-firmware-internal.bin"
+      "size": 4253216,
+      "sha256": "8dce90ca26c7d00740f76bee6c85578ecb4fc13e887627b4e7ef18631d5df8d5",
+      "url": "https://raw.githubusercontent.com/ZerGint/FNK0104s_xiaozhi_update/main/firmware/stable/1.2.0/fnk0104s-firmware-internal.bin"
     }
   }
 }
